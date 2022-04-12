@@ -54,7 +54,7 @@ app.post("/", async (req, res) => {
         console.error(`  Error: ${result.error}`);
       }
     }
-    res.render("result.ejs", { result: results});
+    res.render("result.ejs", { result: results, text: documents[0]});
   } catch (err) {
     console.log(err);
   }
