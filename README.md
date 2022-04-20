@@ -16,3 +16,9 @@
 # Run
 
 `npm start`
+
+# Application Design
+![alt text](public/Application_Design.jpg?raw=true)
+
+
+
