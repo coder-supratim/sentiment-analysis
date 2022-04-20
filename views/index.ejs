@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Sentiment Analysis</title>
+  <title>Sentiment Analysis Application</title>
   <meta charset="utf-8" />
   <style>
     .wrapper {
@@ -10,18 +10,17 @@
       margin: 15px 10px;
       background-color: #337ab7;
     }
-    .input:focus { 
-    outline: none !important;
-    border-color: #719ECE;
-    box-shadow: 0 0 10px #719ECE;
-  }
+    
     
     textarea {
-      font-size: 20px;
+      font-size: 80px;
       width: 100%;
+      word-wrap: break-word;
+      word-break: break-all;
     }
     #content {
         height: 1000px;
+        width: 100%;
         background-color: linear-gradient(white, rgb(0, 255, 255)); /* For browsers that do not support gradients */
         background-image: linear-gradient(white, rgba(0, 255, 255, 0.705));
       }
@@ -34,8 +33,8 @@
     <div class="container body-content">
       <div class="container">
         <div class="py-5 text-center"></div>
-        <h2>Analyze Tweet Sentiment </h2>
-        <p class="lead">The Text Analytics API's Sentiment Analysis feature is used to analyze the tweets by
+        <h2 style="font-weight: bold;"> Tweet Sentiment Analyzer</h2>
+        <p class="lead">Azure Cognitive Service Sentiment Analysis feature is used to analyze tweets by
           influencers.</p>
       </div>
 
@@ -46,7 +45,7 @@
         <div class="container">
 
           <div class="wrapper">
-            <input type="textarea" id="txtInput" style="display: inline-block;width:100%;padding: 0px 0px 200px 0;"
+            <input type="textarea" wrap="hard" id="txtInput" style="display: inline-block;width:100%;padding: 0px 0px 200px 0;"
               name="sendText" />
           </div><br>
           <div class="row">
